@@ -78,9 +78,9 @@ Request.prototype.resetLink = function (cb) {
         dstAddr: this.slave.dir
       , srcAddr: this.slave.master.dir
     })
-    datagram.setDlcDir(1)
-    datagram.setDlcPrm(1)
-    this.datagram = datagram.build()
+    this.datagram = datagram.setDlcDir(1)
+        .setDlcPrm(1)
+        .build()
     this.cb = cb || function () {}
 
     this._state = Request.States.CONFIG
@@ -94,10 +94,10 @@ Request.prototype.linkStatus = function (cb) {
         dstAddr: this.slave.dir
       , srcAddr: this.slave.master.dir
     })
-    datagram.setDlcDir(1)
-    datagram.setDlcPrm(1)
-    datagram.setDlcFc(9)
-    this.datagram = datagram.build()
+    this.datagram = datagram.setDlcDir(1)
+        .setDlcPrm(1)
+        .setDlcFc(9)
+        .build()
     this.cb = cb || function () {}
 
     this._state = Request.States.CONFIG
@@ -111,12 +111,12 @@ Request.prototype.testLink = function (cb) {
         dstAddr: this.slave.dir
       , srcAddr: this.slave.master.dir
     })
-    datagram.setDlcDir(1)
-    datagram.setDlcPrm(1)
-    datagram.setDlcFcb(1)
-    datagram.setDlcFcvDfc(1)
-    datagram.setDlcFc(2)
-    this.datagram = datagram.build()
+    this.datagram = datagram.setDlcDir(1)
+        .setDlcPrm(1)
+        .setDlcFcb(1)
+        .setDlcFcvDfc(1)
+        .setDlcFc(2)
+        .build()
     this.cb = cb || function () {}
 
     this._state = Request.States.CONFIG
