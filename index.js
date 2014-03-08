@@ -1,2 +1,2 @@
-exports.Datagram = require('./Datagram')
-exports.Master = require('./Master')
+exports.Datagram = require('./lib/Datagram')
+exports.Master = require('./lib/Master')
