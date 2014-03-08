@@ -1,0 +1,22 @@
+{
+  "name": "dnp3",
+  "description": "A DNP 3.0 library for Node.js",
+  "keywords": ["dnp", "dnp3"],
+  "version": "0.0.0",
+  "homepage": "https://github.com/IvanGaravito/dnp3",
+  "license": "MIT",
+  "author": {
+    "name": "Ivan Garavito",
+    "email": "ivangaravito@gmail.com",
+    "url": "https://github.com/IvanGaravito"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/IvanGaravito/dnp3.git"
+  },
+  "main": "./index.js",
+  "dependencies": {
+    "dnp3-crc": ">=1.0.0"
+  },
+  "private": true
+}
