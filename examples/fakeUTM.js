@@ -37,7 +37,7 @@ var master = new dnp3.Master({
 
 if (userRequest in request && 'function' === typeof request[userRequest]) {
     request[userRequest](function (data) {
-        console.log('fakeUTM# Link status response:', data)
+        console.log('fakeUTM# ' + userRequest + ' response:', data)
         process.exit()
     })
 } else {
