@@ -1,22 +1,72 @@
 {
-  "name": "dnp3",
+  "name": "@biancoroyal/dnp3",
+  "version": "0.0.1",
+  "private": false,
   "description": "A DNP 3.0 library for Node.js",
-  "keywords": ["dnp", "dnp3"],
-  "version": "0.0.0",
-  "homepage": "https://github.com/IvanGaravito/dnp3",
+  "keywords": [
+    "dnp",
+    "dnp3"
+  ],
+  "homepage": "https://github.com/biancode/dnp3",
   "license": "MIT",
-  "author": {
-    "name": "Ivan Garavito",
-    "email": "ivangaravito@gmail.com",
-    "url": "https://github.com/IvanGaravito"
+  "author": [
+    {
+      "name": "Ivan Garavito",
+      "email": "ivangaravito@gmail.com",
+      "url": "https://github.com/IvanGaravito"
+    },
+    {
+      "name": "Klaus Landsdorf",
+      "email": "klaus.landsdorf@bianco-royal.de",
+      "url": "https://github.com/biancode"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/biancode/dnp3/issues/"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/IvanGaravito/dnp3.git"
+    "url": "git://github.com/biancode/dnp3.git"
   },
   "main": "./index.js",
   "dependencies": {
-    "dnp3-crc": ">=1.0.0"
+    "dnp3-crc": "^1.0.0"
   },
-  "private": true
+  "scripts": {
+    "test": "standard --fix",
+    "build": "standard --fix",
+    "prepublishOnly": "standard --fix && npm run build && npm test",
+    "ci-publish": "ci-publish",
+    "release": "standard-version"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.10.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-jsx": "^4.0.2",
+    "eslint-plugin-mocha": "^4.11.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "js-beautify": "^1.7.4",
+    "mocha": "^3.5.3",
+    "nock": "^9.0.27",
+    "pump": "^1.0.2",
+    "should": "^13.1.3",
+    "sinon": "^4.1.1",
+    "standard": "^10.0.3",
+    "standard-version": "^4.2.0",
+    "supertest": "^3.0.0",
+    "when": "^3.7.8"
+  },
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "standard": {
+    "ignore": [
+      "node_modules/",
+      "examples/",
+      "docs",
+      "test"
+    ]
+  }
 }
