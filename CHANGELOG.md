@@ -4,3 +4,8 @@ All notable changes to this project will be documented in this file. See [standa
 
 <a name="0.0.2"></a>
 ## 0.0.2 (2017-11-06)
+
+- update to ES6 
+
+<a name="0.0.1"></a>
+## 0.0.1 (2014-03-07)

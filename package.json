@@ -26,7 +26,7 @@
     "dnp3-crc": "^1.0.0"
   },
   "scripts": {
-    "test": "standard --fix",
+    "test": "standard --fix && mocha test/* --reporter dot",
     "build": "standard --fix",
     "prepublishOnly": "standard --fix && npm run build && npm test",
     "ci-publish": "ci-publish",
