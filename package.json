@@ -1,32 +1,25 @@
 {
-  "name": "@biancoroyal/dnp3",
-  "version": "0.0.1",
+  "name": "dnp3",
+  "version": "0.0.2",
   "private": false,
   "description": "A DNP 3.0 library for Node.js",
   "keywords": [
     "dnp",
     "dnp3"
   ],
-  "homepage": "https://github.com/biancode/dnp3",
+  "homepage": "https://github.com/IvanGaravito/dnp3",
   "license": "MIT",
-  "author": [
-    {
-      "name": "Ivan Garavito",
-      "email": "ivangaravito@gmail.com",
-      "url": "https://github.com/IvanGaravito"
-    },
-    {
-      "name": "Klaus Landsdorf",
-      "email": "klaus.landsdorf@bianco-royal.de",
-      "url": "https://github.com/biancode"
-    }
-  ],
+  "author": {
+    "name": "Ivan Garavito",
+    "email": "ivangaravito@gmail.com",
+    "url": "https://github.com/IvanGaravito"
+  },
   "bugs": {
-    "url": "https://github.com/biancode/dnp3/issues/"
+    "url": "https://github.com/IvanGaravito/dnp3/issues/"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/biancode/dnp3.git"
+    "url": "git://github.com/IvanGaravito/dnp3.git"
   },
   "main": "./index.js",
   "dependencies": {
@@ -64,7 +57,6 @@
   "standard": {
     "ignore": [
       "node_modules/",
-      "examples/",
       "docs",
       "test"
     ]
