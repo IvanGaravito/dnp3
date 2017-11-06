@@ -1,6 +1,6 @@
 {
   "name": "dnp3",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "description": "A DNP 3.0 library for Node.js",
   "keywords": [
